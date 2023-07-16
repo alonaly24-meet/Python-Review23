@@ -1,0 +1,15 @@
+def create_youtube_video(title, description):
+	dic={"title":title, "description":description, "likes":0, "dislikes":0, "comments": {"usename": "username"}}
+	return dic
+
+def like(dictionary):
+	if "likes" in dictionary:
+		dictionary[likes]=	dictionary[likes+1]
+	return dictionary
+
+def like(dictionary):
+	if "likes" in dictionary:
+		dictionary[dislikes]=	dictionary[dislikes+1]
+	return dictionary
+
+
