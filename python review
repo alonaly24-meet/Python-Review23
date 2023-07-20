@@ -1,6 +1,8 @@
 def create_youtube_video(title, description):
 	dic={"title":title, "description":description, "likes":0, "dislikes":0, "comments": {"usename": "username"}}
 	return dic
+	title=input("what is the title you want for the video?")
+	description=input("what is the description you want for the video?")
 
 def like(dictionary):
 	if "likes" in dictionary:
@@ -12,4 +14,14 @@ def like(dictionary):
 		dictionary[dislikes]=	dictionary[dislikes+1]
 	return dictionary
 
+def add_comment(dic, username, comment_text):
+	dic["comments"][username]="comment_text"
+	return dic
+
+comment_text="HATE THIS VIDEO!!!!!"
+
+#def add_likes(dic["likes"]):
+#	for i in range 496:
+#	like
+#	i=i+1
 
